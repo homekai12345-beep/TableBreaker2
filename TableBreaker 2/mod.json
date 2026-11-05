@@ -1,0 +1,69 @@
+{
+    "name": "TableBreaker",
+    "author": "You",
+    "version": "1.1.0",
+    "description": "Sextillion Die + Sum Die (approximation)",
+    "dice": [
+        {
+            "ide": "sextillion_die",
+            "rarity": 1,
+            "prio": 5,
+            "sprite": "sprites/sextillion_die.png",
+            "faces": [
+                {
+                    "value": 0
+                },
+                {
+                    "value": 0
+                },
+                {
+                    "value": 0
+                }
+            ],
+            "faces_desc": "[spr_dice_icon,0] +100 sextillion value to all",
+            "tag": [
+                "faces_even"
+            ],
+            "kw": [
+                "face"
+            ],
+            "effect": {
+                "type": "add_value_all",
+                "value": 100000000000000000000000
+            },
+            "title": "Sextillion Die",
+            "description": "Adds 100 sextillion value to every die on the table."
+        },
+        {
+            "ide": "sum_die",
+            "rarity": 1,
+            "prio": 5,
+            "sprite": "sprites/sum_die.png",
+            "faces": [
+                {
+                    "value": 0
+                },
+                {
+                    "value": 0
+                },
+                {
+                    "value": 0
+                }
+            ],
+            "faces_desc": "[spr_dice_icon,0] +total value to every die",
+            "tag": [
+                "faces_even"
+            ],
+            "kw": [
+                "face"
+            ],
+            "effect": {
+                "type": "add_value_per_die",
+                "value": 1
+            },
+            "title": "Sum Die",
+            "description": "Adds extra value per die on the table. (Not the exact 'sum of all values' - see README.)"
+        }
+    ],
+    "rings": []
+}
